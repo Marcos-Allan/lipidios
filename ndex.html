@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipidios</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 900px)">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <main>
+        <header>
+            <a href="#home">
+                <h1>
+                    lipidios
+                </h1>
+            </a>
+        </header>
+
+        <section class="produtos">
+            <section class="card">
+                <img src="imgs/brigadeiro.avif" alt="brigadeiro" class="brigadeiro" >
+                <button class="btn" id="btn_brigadeiro">mostrar tabela nutricional</button>
+            </section>
+            <section class="card">
+                <img src="imgs/amendoim.webp" alt="amendoin torrado" class="amendoin" >
+                <button class="btn" id="btn_amendoin">mostrar tabela nutricional</button>
+            </section>
+        </section>
+        
+        <!-- TABELA NUTRICIONAL AMENDOIN -->
+        <div class="tables">
+             <div class="table" id="nutricional_amendoin">
+                <h1>AMENDOIN</h1>
+                 <table>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">Dados Nutricionais por cada (30g)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="text_right">por porção</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Energia</td>
+                        <td class="text_right">734 kj</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"  class="text_right">176kj</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>carboidratos</td>
+                        <td class="text_right">6,45g</td>
+                    </tr>
+                    <tr>
+                        <td>Açúcar</td>
+                        <td  class="text_right">1,25g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td class="text_right">7,1g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Gouduras</td>
+                        <td class="text_right">14,9g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Goudura Saturada</td>
+                        <td class="text_right">2,068g</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-right: 50px;">Goudura Monoinsaturada</td>
+                        <td class="text_right">7,392g</td>
+                    </tr>
+                    <tr>
+                        <td>Goudura Poliinsaturada</td>
+                        <td class="text_right">4,708g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Colesterol</td>
+                        <td class="text_right">0mg</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Fibras</td>
+                        <td class="text_right">2,4g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Sódio</td>
+                        <td class="text_right">2mg</td>
+                    </tr>
+                         </table>
+             </div>
+            <!-- TABELA NUTRICIONAL BRIGADEIRO -->
+             <div class="table" id="nutricional_brigadeiro">
+                <h1>BRIGADEIRO</h1>
+                 <table>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">Dados Nutricionais por unidade (pequena)</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Calorias (valor energético)</td>
+                        <td class="text_right">33.45 kcal</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Carboidratos Líquidos</td>
+                        <td class="text_right">6,45g</td>
+                    </tr>
+                    <tr>
+                        <td>Carboidratos</td>
+                        <td  class="text_right">5.49g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Proteinas</td>
+                        <td class="text_right">0.75g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Gouduras Totais</td>
+                        <td class="text_right">1.01g</td>
+                    </tr>
+                    <tr>
+                        <td>Gouduras Saturadas</td>
+                        <td class="text_right">0.55g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Fibra Alimentar</td>
+                        <td class="text_right">0.02g</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><div class="span"></div></td>
+                    </tr>
+                    <tr>
+                        <td>Sódio</td>
+                        <td class="text_right">12.86mg</td>
+                    </tr>
+                         </table>
+             </div>
+        </div>
+        
+    </main>
+</body>
+</html>
