@@ -167,7 +167,7 @@ table{
 td{
     padding: 4px 0px;
     text-align: left;
-    font-size: 0.43em;
+    font-size: 0.35em;
 }
 
 .text_right{
@@ -176,7 +176,7 @@ td{
 
 .text_destaque{
     font-weight: bolder;
-    font-size: 0.48em;
+    font-size: 0.40em;
     color: var(--color1);
     text-decoration: underline;
 }
