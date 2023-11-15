@@ -27,10 +27,7 @@ body{
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
 .texts > p{
@@ -65,6 +62,17 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
     background-color: var(--color2);
+}
+
+
+h1.menu{
+    background: linear-gradient(to right, var(--color1) 40%, transparent);
+    width: 100vw;
+    text-align: center;
+    color: var(--color5);
+    padding: 30px 0px;
+    font-size: 1.8em;
+    text-transform: capitalize;
 }
 
 section#interation{
@@ -128,7 +136,6 @@ div.tables{
     flex-direction: column;
     overflow-x: hidden;
 }
-
 
 div.tables > div.table{
     width: 100%;

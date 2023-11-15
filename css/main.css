@@ -15,6 +15,7 @@
     letter-spacing: 3px;
     font-size: 1.2em;
     overflow-x: hidden;
+    color: #121212
 }
 
 html{
@@ -37,32 +38,21 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--color3);
 }
 
+main{
+    position: relative;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
 
-main > header {
-    background-color: var(--color2);
-    position: sticky;
-    left: 0%;
-    top: 0%;
+h1.menu{
+    background: var(--color1);
     width: 100vw;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 5;
-}
-
-main > header > a{
-    text-decoration: none;
-}
-
-main > header > a > h1{
-    font-size: 2em;
     text-align: center;
-    text-transform: capitalize;
     color: var(--color5);
-    padding: 10px 0px;
+    padding: 30px 0px;
+    font-size: 1.8em;
+    text-transform: capitalize;
 }
-
 
 section#interation{
     width: 100vw;
@@ -198,7 +188,6 @@ div.span{
     animation: bounceInRight; 
     animation-duration: 1.7s;
 }
-
 
 .bounceInLeft {
     animation: bounceInLeft; 
