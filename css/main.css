@@ -36,28 +36,6 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--color3);
 }
 
-section#interation{
-    width: 100vw;
-    min-height: 100vh;
-    overflow-y: scroll;
-    background-color: var(--color5);
-    display: flex;
-    padding-top: 90px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-bottom: 50px;
-}
-
-section#interation > section.produtos{
-    width: 100vw;
-    background-color: var(--color5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
 
 main > header {
     background-color: var(--color2);
@@ -84,6 +62,30 @@ main > header > a > h1{
     padding: 10px 0px;
 }
 
+
+section#interation{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--color5);
+    display: flex;
+    padding-top: 90px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 50px;
+}
+
+section#interation > section.produtos{
+    width: 100vw;
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
 section#interation > section.produtos > section {
     width: 85%;
     display: flex;
@@ -102,10 +104,6 @@ section#interation > section.produtos > section {
     box-shadow: 8px 8px 1px 0px rgba(0, 0, 0, 0.360);
     background-color: #ffffff;
     transition: .5s;
-}
-
-section#interation >section.produtos > section:hover{
-    scale: 1.05;
 }
 
 section#interation > section.produtos > section > button.btn{
@@ -142,6 +140,7 @@ div.tables{
     align-items: center;
     flex-direction: column;
     overflow-y: hidden;
+    padding-bottom: 50px;
 }
 
 div.tables > div.table > h1{
@@ -168,11 +167,18 @@ table{
 td{
     padding: 4px 0px;
     text-align: left;
-    font-size: 0.5em;
+    font-size: 0.43em;
 }
 
 .text_right{
     text-align: right;
+}
+
+.text_destaque{
+    font-weight: bolder;
+    font-size: 0.48em;
+    color: var(--color1);
+    text-decoration: underline;
 }
 
 div.span{
@@ -200,11 +206,13 @@ div.span{
 
 .bcg{
     width: 100vw;
-    height: 100vh;
-}
-
-.bcg > a {
-    text-decoration: none;
+    height: 100vh;background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bcg  > h2{
@@ -218,13 +226,10 @@ div.span{
 
 .bg1{
     background-image: url('../imgs/bg1.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.bg2{
+    background-image: url('../imgs/bc2.avif');
 }
 
 .texts{
@@ -234,6 +239,7 @@ div.span{
 }
 
 .texts > p{
+    padding: 10px;
     margin: 20px 0px;
     line-height: 1.8em;
     font-size: 1.5em;

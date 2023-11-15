@@ -1,3 +1,5 @@
+AOS.init();
+
 let btn_brigadeiro = document.querySelector('#btn_brigadeiro')
 let btn_amendoin = document.querySelector('#btn_amendoin')
 
