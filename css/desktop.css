@@ -26,6 +26,13 @@ body{
     overflow-x: hidden;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .texts > p{
     padding: 0px 200px;
 }
@@ -85,10 +92,6 @@ section#interation > section.produtos > section {
     box-shadow: 8px 8px 1px 0px rgba(0, 0, 0, 0.360);
     background-color: #ffffff;
     transition: .5s;
-}
-
-section#interation >section.produtos > section:hover{
-    scale: 1.05;
 }
 
 section#interation > section.produtos > section > button.btn{
