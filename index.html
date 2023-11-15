@@ -6,11 +6,39 @@
     <title>Lipidios</title>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css" media="screen">
-    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 900px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 700px)">
+    <link rel="shortcut icon" href="imgs/lipidio-a.png" type="image/x-icon">
+
     <script src="js/main.js" defer></script>
 </head>
 <body>
     <main>
+        
+
+        <section class="bcg bg1" id="home">
+            <h2 class="bounceInLeft">O que são os lipidios?</h2>
+        </section>
+        <section class="texts">
+            <p>
+                Os lipídios são uma classe de moléculas orgânicas essenciais encontradas nos seres vivos, desempenhando diversas funções vitais. Eles são caracterizados por serem insolúveis em água e solúveis em solventes orgânicos, como éter e clorofórmio. Os principais tipos de lipídios incluem triglicerídeos (gorduras), fosfolipídios, esteroides e ceras.
+            </p>
+            <p>
+                Triglicerídeos (Gorduras): São compostos por uma molécula de glicerol ligada a três ácidos graxos. Eles servem como reserva de energia nos organismos, sendo armazenados em células adiposas.
+            </p>
+            <p>
+                Fosfolipídios: São componentes essenciais das membranas celulares. Possuem uma cabeça polar e duas caudas não polares, conferindo propriedades anfipáticas, ou seja, são solúveis tanto em água quanto em gordura.
+            </p>
+            <p>
+                Esteroides: Incluem hormônios esteroides (como os hormônios sexuais), colesterol e ácidos biliares. Desempenham papéis importantes na regulação metabólica, na formação de membranas celulares e na produção de hormônios.
+            </p>
+            <p>
+                Ceras: São lipídios formados por uma combinação de ácidos graxos com álcoois de cadeia longa. Elas desempenham funções protetoras, como impermeabilização em penas, pelos e pele de animais, além de revestir algumas superfícies vegetais.
+            </p>
+            <p>    
+                Os lipídios desempenham papéis cruciais na manutenção da estrutura celular, na regulação do metabolismo e na armazenagem e liberação de energia. Além disso, estão envolvidos em processos biológicos essenciais, como a síntese de hormônios e a absorção de vitaminas lipossolúveis.
+            </p>
+        </section>
+
         <header>
             <a href="#home">
                 <h1>
@@ -19,168 +47,169 @@
             </a>
         </header>
 
-        <section class="produtos">
-            <section class="card">
-                <img src="imgs/brigadeiro.avif" alt="brigadeiro" class="brigadeiro" >
-                <button class="btn" id="btn_brigadeiro">mostrar tabela nutricional</button>
+        <section id="interation">
+
+            <section class="produtos">
+                <section class="card">
+                    <img src="imgs/brigadeiro.avif" alt="brigadeiro" class="brigadeiro" >
+                    <button class="btn" id="btn_brigadeiro">mostrar tabela nutricional</button>
+                </section>
+                <section class="card">
+                    <img src="imgs/amendoim.webp" alt="amendoin torrado" class="amendoin" >
+                    <button class="btn" id="btn_amendoin">mostrar tabela nutricional</button>
+                </section>
             </section>
-            <section class="card">
-                <img src="imgs/amendoim.webp" alt="amendoin torrado" class="amendoin" >
-                <button class="btn" id="btn_amendoin">mostrar tabela nutricional</button>
-            </section>
+            
+            <!-- TABELA NUTRICIONAL AMENDOIN -->
+            <div class="tables">
+                <div class="table" id="nutricional_amendoin">
+                    <h1>AMENDOIN</h1>
+                    <table>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">Dados Nutricionais por cada (30g)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text_right">por porção</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Energia</td>
+                            <td class="text_right">734 kj</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"  class="text_right">176kj</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>carboidratos</td>
+                            <td class="text_right">6,45g</td>
+                        </tr>
+                        <tr>
+                            <td>Açúcar</td>
+                            <td  class="text_right">1,25g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Proteinas</td>
+                            <td class="text_right">7,1g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Gouduras</td>
+                            <td class="text_right">14,9g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Goudura Saturada</td>
+                            <td class="text_right">2,068g</td>
+                        </tr>
+                        <tr>
+                            <td style="padding-right: 50px;">Goudura Monoinsaturada</td>
+                            <td class="text_right">7,392g</td>
+                        </tr>
+                        <tr>
+                            <td>Goudura Poliinsaturada</td>
+                            <td class="text_right">4,708g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Colesterol</td>
+                            <td class="text_right">0mg</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Fibras</td>
+                            <td class="text_right">2,4g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Sódio</td>
+                            <td class="text_right">2mg</td>
+                        </tr>
+                            </table>
+                </div>
+
+                <!-- TABELA NUTRICIONAL BRIGADEIRO -->
+                <div class="table" id="nutricional_brigadeiro">
+                    <h1>BRIGADEIRO</h1>
+                    <table>
+                        <tr>
+                            <td colspan="2" style="text-align: center;">Dados Nutricionais por unidade (pequena)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Calorias (valor energético)</td>
+                            <td class="text_right">33.45 kcal</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Carboidratos Líquidos</td>
+                            <td class="text_right">6,45g</td>
+                        </tr>
+                        <tr>
+                            <td>Carboidratos</td>
+                            <td  class="text_right">5.49g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Proteinas</td>
+                            <td class="text_right">0.75g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Gouduras Totais</td>
+                            <td class="text_right">1.01g</td>
+                        </tr>
+                        <tr>
+                            <td>Gouduras Saturadas</td>
+                            <td class="text_right">0.55g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Fibra Alimentar</td>
+                            <td class="text_right">0.02g</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><div class="span"></div></td>
+                        </tr>
+                        <tr>
+                            <td>Sódio</td>
+                            <td class="text_right">12.86mg</td>
+                        </tr>
+                            </table>
+                </div>
+            </div>
+            
         </section>
-        
-        <!-- TABELA NUTRICIONAL AMENDOIN -->
-        <div class="tables">
-             <div class="table" id="nutricional_amendoin">
-                <h1>AMENDOIN</h1>
-                 <table>
-                    <tr>
-                        <td colspan="2" style="text-align: center;">Dados Nutricionais por cada (30g)</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" class="text_right">por porção</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Energia</td>
-                        <td class="text_right">734 kj</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"  class="text_right">176kj</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>carboidratos</td>
-                        <td class="text_right">6,45g</td>
-                    </tr>
-                    <tr>
-                        <td>Açúcar</td>
-                        <td  class="text_right">1,25g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Proteinas</td>
-                        <td class="text_right">7,1g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Gouduras</td>
-                        <td class="text_right">14,9g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Goudura Saturada</td>
-                        <td class="text_right">2,068g</td>
-                    </tr>
-                    <tr>
-                        <td style="padding-right: 50px;">Goudura Monoinsaturada</td>
-                        <td class="text_right">7,392g</td>
-                    </tr>
-                    <tr>
-                        <td>Goudura Poliinsaturada</td>
-                        <td class="text_right">4,708g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Colesterol</td>
-                        <td class="text_right">0mg</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Fibras</td>
-                        <td class="text_right">2,4g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Sódio</td>
-                        <td class="text_right">2mg</td>
-                    </tr>
-                         </table>
-             </div>
-            <!-- TABELA NUTRICIONAL BRIGADEIRO -->
-             <div class="table" id="nutricional_brigadeiro">
-                <h1>BRIGADEIRO</h1>
-                 <table>
-                    <tr>
-                        <td colspan="2" style="text-align: center;">Dados Nutricionais por unidade (pequena)</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Calorias (valor energético)</td>
-                        <td class="text_right">33.45 kcal</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Carboidratos Líquidos</td>
-                        <td class="text_right">6,45g</td>
-                    </tr>
-                    <tr>
-                        <td>Carboidratos</td>
-                        <td  class="text_right">5.49g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Proteinas</td>
-                        <td class="text_right">0.75g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Gouduras Totais</td>
-                        <td class="text_right">1.01g</td>
-                    </tr>
-                    <tr>
-                        <td>Gouduras Saturadas</td>
-                        <td class="text_right">0.55g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Fibra Alimentar</td>
-                        <td class="text_right">0.02g</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><div class="span"></div></td>
-                    </tr>
-                    <tr>
-                        <td>Sódio</td>
-                        <td class="text_right">12.86mg</td>
-                    </tr>
-                         </table>
-             </div>
-        </div>
-        
-    </main>
+</main>
 </body>
 </html>

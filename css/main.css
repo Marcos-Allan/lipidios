@@ -26,26 +26,6 @@ body{
     overflow-x: hidden;
 }
 
-main{
-    width: 100vw;
-    min-height: 100vh;
-    overflow-y: scroll;
-    background-color: var(--color5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-main > section.produtos{
-    width: 100vw;
-    background-color: var(--color5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-}
 
 body::-webkit-scrollbar{
     width: 10px;
@@ -56,21 +36,39 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--color3);
 }
 
-main{
-    padding-top: 90px;
+section#interation{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--color5);
     display: flex;
+    padding-top: 90px;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    padding-bottom: 50px;
+}
+
+section#interation > section.produtos{
+    width: 100vw;
+    background-color: var(--color5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 main > header {
     background-color: var(--color2);
-    position: fixed;
+    position: sticky;
     left: 0%;
     top: 0%;
     width: 100vw;
     height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 5;
 }
 
@@ -86,8 +84,8 @@ main > header > a > h1{
     padding: 10px 0px;
 }
 
-main > section.produtos > section {
-    width: 80vw;
+section#interation > section.produtos > section {
+    width: 85%;
     display: flex;
     height: 270px;
     align-items: center;
@@ -106,11 +104,11 @@ main > section.produtos > section {
     transition: .5s;
 }
 
-main >section.produtos > section:hover{
+section#interation >section.produtos > section:hover{
     scale: 1.05;
 }
 
-main > section.produtos > section > button.btn{
+section#interation > section.produtos > section > button.btn{
     position: absolute;
     bottom: 0%;
     left: 0%;
@@ -125,12 +123,12 @@ main > section.produtos > section > button.btn{
     cursor: pointer;
 }
 
-main > section.produtos > section > img.brigadeiro {
+section#interation > section.produtos > section > img.brigadeiro {
     width: 310px;
     height: auto;
 }
 
-main > section.produtos > section > img.amendoin {
+section#interation > section.produtos > section > img.amendoin {
     width: 170px;
     height: auto;
 }
@@ -153,7 +151,7 @@ div.tables > div.table > h1{
 }
 
 div.tables > div.table{
-    width: 80%;
+    width: 85%;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid black;
@@ -170,7 +168,7 @@ table{
 td{
     padding: 4px 0px;
     text-align: left;
-    font-size: 0.8em;;
+    font-size: 0.5em;
 }
 
 .text_right{
@@ -187,4 +185,56 @@ div.span{
 #nutricional_amendoin,
 #nutricional_brigadeiro{
     display: none;
+}
+
+.bounceInRight {
+    animation: bounceInRight; 
+    animation-duration: 1.7s;
+}
+
+
+.bounceInLeft {
+    animation: bounceInLeft; 
+    animation-duration: 1.2s;
+}
+
+.bcg{
+    width: 100vw;
+    height: 100vh;
+}
+
+.bcg > a {
+    text-decoration: none;
+}
+
+.bcg  > h2{
+    color: #ffffff;
+    font-size: 2.7em;
+    text-align: center;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.bg1{
+    background-image: url('../imgs/bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts{
+    padding: 10px;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.texts > p{
+    margin: 20px 0px;
+    line-height: 1.8em;
+    font-size: 1.5em;
 }

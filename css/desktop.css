@@ -26,7 +26,11 @@ body{
     overflow-x: hidden;
 }
 
-main{
+.texts > p{
+    padding: 0px 200px;
+}
+
+section#interation{
     width: 100vw;
     min-height: 100vh;
     overflow-y: scroll;
@@ -37,7 +41,7 @@ main{
     flex-direction: row;
 }
 
-main > section.produtos{
+section#interation > section.produtos{
     width: 100vw;
     background-color: var(--color5);
     display: flex;
@@ -56,36 +60,15 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--color3);
 }
 
-main{
+section#interation{
     padding-top: 90px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-main > header {
-    background-color: var(--color2);
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    width: 100vw;
-    height: 80px;
-    z-index: 5;
-}
-
-main > header > a{
-    text-decoration: none;
-}
-
-main > header > a > h1{
-    text-align: center;
-    text-transform: capitalize;
-    color: var(--color5);
-    padding: 10px 0px;
-}
-
-main > section.produtos > section {
+section#interation > section.produtos > section {
     width: 40vw;
     display: flex;
     align-items: center;
@@ -104,11 +87,11 @@ main > section.produtos > section {
     transition: .5s;
 }
 
-main >section.produtos > section:hover{
+section#interation >section.produtos > section:hover{
     scale: 1.05;
 }
 
-main > section.produtos > section > button.btn{
+section#interation > section.produtos > section > button.btn{
     position: absolute;
     bottom: 0%;
     left: 0%;
@@ -122,33 +105,44 @@ main > section.produtos > section > button.btn{
     z-index: 4;
 }
 
-main > section.produtos > section > img.brigadeiro {
+section#interation > section.produtos > section > img.brigadeiro {
     width: 210px;
     height: auto;
 }
 
-main > section.produtos > section > img.amendoin {
+section#interation > section.produtos > section > img.amendoin {
     width: 100px;
     height: auto;
 }
 
 div.tables{
+    margin-top: 10px;
     width: 100%;
     overflow-y: scroll;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 
 div.tables > div.table{
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
     overflow: hidden;
     border: 1px solid black;
     background-color: #ffffff;
+}
+
+#nutricional_amendoin{
+    position: relative;
+    right: -100%
+}
+
+#nutricional_brigadeiro{
+    position: relative;
+    right: -100%
 }
 
 div.tables > div.table > h1{

@@ -16,10 +16,28 @@ btn_amendoin.addEventListener('click', () => {
 
 function tabelaNutricional(produto){
     if(produto == 'brigadeiro'){
+        
         tableNutricionalAmendoin.style.display = 'none'
         tableNutricionalBrigadeiro.style.display = 'block'
+        
+        tableNutricionalBrigadeiro.style.right = '0%'
+        tableNutricionalAmendoin.style.right = '-100%'
+        
+        btn_brigadeiro.style.backgroundColor = 'var(--color2)'
+        tableNutricionalBrigadeiro.classList.add('bounceInRight')
+        btn_amendoin.style.backgroundColor = 'var(--color1)'
     }else if(produto == 'amendoin'){
+        
         tableNutricionalBrigadeiro.style.display = 'none'
         tableNutricionalAmendoin.style.display = 'block'
+        
+        tableNutricionalAmendoin.style.right = '0%'
+        tableNutricionalBrigadeiro.style.right = '-100%'
+
+        tableNutricionalAmendoin.classList.add('bounceInRight')
+        btn_amendoin.style.backgroundColor = 'var(--color2)'
+        btn_brigadeiro.style.backgroundColor = 'var(--color1)'
     }
 }
+
+tabelaNutricional('brigadeiro')
