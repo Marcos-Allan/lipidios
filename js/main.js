@@ -25,9 +25,11 @@ function tabelaNutricional(produto){
         tableNutricionalBrigadeiro.style.right = '0%'
         tableNutricionalAmendoin.style.right = '-100%'
         
-        btn_brigadeiro.style.backgroundColor = 'var(--color1)'
         tableNutricionalBrigadeiro.classList.add('bounceInRight')
-        btn_amendoin.style.backgroundColor = 'var(--color2)'
+        btn_brigadeiro.style.backgroundColor = 'var(--color2)'
+        btn_amendoin.style.backgroundColor = 'var(--color1)'
+        btn_brigadeiro.parentNode.style.border = '2px solid var(--color2)'
+        btn_amendoin.parentNode.style.border = '2px solid var(--color1)'
     }else if(produto == 'amendoin'){
         
         tableNutricionalBrigadeiro.style.display = 'none'
@@ -35,10 +37,12 @@ function tabelaNutricional(produto){
         
         tableNutricionalAmendoin.style.right = '0%'
         tableNutricionalBrigadeiro.style.right = '-100%'
-
+        
         tableNutricionalAmendoin.classList.add('bounceInRight')
-        btn_amendoin.style.backgroundColor = 'var(--color1)'
-        btn_brigadeiro.style.backgroundColor = 'var(--color2)'
+        btn_amendoin.style.backgroundColor = 'var(--color2)'
+        btn_brigadeiro.style.backgroundColor = 'var(--color1)'
+        btn_amendoin.parentNode.style.border = '2px solid var(--color2)'
+        btn_brigadeiro.parentNode.style.border = '2px solid var(--color1)'
     }
 }
 

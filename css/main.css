@@ -1,10 +1,10 @@
 :root{
     font-size: 0.5em;
-    --color1: #7672f2;
-    --color2: #383673;
-    --color3: #2d2f59;
+    --color1: #ff8a67;
+    --color2: #ff3c00;
+    --color3: #FF6637;
     --color4: #6e7073;
-    --color5: #f2f2f2;
+    --color5: #FDFFFC;
 }
 
 * {
@@ -15,7 +15,6 @@
     letter-spacing: 3px;
     font-size: 1.2em;
     overflow-x: hidden;
-    color: #121212
 }
 
 html{
@@ -112,6 +111,11 @@ section#interation > section.produtos > section > button.btn{
     cursor: pointer;
 }
 
+section#interation > section.produtos > section > button.btn:focus{
+    outline: none;
+    border: none;
+}
+
 section#interation > section.produtos > section > img.brigadeiro {
     width: 310px;
     height: auto;
@@ -168,7 +172,7 @@ td{
 .text_destaque{
     font-weight: bolder;
     font-size: 0.40em;
-    color: var(--color1);
+    color: var(--color2);
     text-decoration: underline;
 }
 
@@ -233,4 +237,52 @@ div.span{
     margin: 20px 0px;
     line-height: 1.8em;
     font-size: 1.5em;
+}
+
+.texts > h1{
+    margin: 12px 0px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+section.polares{
+    border-top: 1px solid var(--color2);
+    background-color: var(--coolor5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px 30px;
+}
+
+section.polares > section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+section.polares > section > h2{
+    text-transform: capitalize;
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+section.polares > section > p{
+    font-weight: light;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+section.polares > section > img{
+    width: 110px;
+    padding: 20px;
+    border: 1px solid var(--color3);
+    border-radius: 50%;
+    margin: 10px 0px;
+}
+
+section.polares > section > p.destaque{
+    color: var(--color2);
+    margin-top: 10px;
+    font-weight: bold;
 }
