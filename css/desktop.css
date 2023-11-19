@@ -121,8 +121,8 @@ section#interation > section.produtos > section > img.brigadeiro {
     height: auto;
 }
 
-section#interation > section.produtos > section > img.amendoin {
-    width: 100px;
+section#interation > section.produtos > section > img.manteiga_amendoin {
+    width: 130px;
     height: auto;
 }
 
@@ -145,7 +145,7 @@ div.tables > div.table{
     background-color: #ffffff;
 }
 
-#nutricional_amendoin{
+#nutricional_manteiga_amendoin{
     position: relative;
     right: -100%
 }
