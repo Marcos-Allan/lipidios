@@ -8,12 +8,18 @@ let tableNutricionalBrigadeiro = document.querySelector('#nutricional_brigadeiro
 
 btn_brigadeiro.addEventListener('click', () => {
     tabelaNutricional('brigadeiro')
-    window.scroll(0, tableNutricionalBrigadeiro.offsetTop - 90)
+        
+    setTimeout(() => {
+        window.scroll(0, tableNutricionalBrigadeiro.offsetTop - 60)
+    }, 1500);
 })
 
 btn_manteiga_amendoin.addEventListener('click', () => {
     tabelaNutricional('manteiga de amendoin')
-    window.scroll(0, tableNutricionalManteigaAmendoin.offsetTop - 90)
+    
+    setTimeout(() => {
+        window.scroll(0, tableNutricionalManteigaAmendoin.offsetTop - 60)
+    }, 1500);
 })
 
 function tabelaNutricional(produto){
