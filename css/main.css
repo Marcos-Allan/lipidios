@@ -230,6 +230,14 @@ div.span{
     background-image: url('../imgs/bg3.jpg');
 }
 
+.bg4{
+    background-image: url('../imgs/bg4.jpeg');
+}
+
+.bg5{
+    background-image: url('../imgs/bg5.jpg');
+}
+
 .texts{
     padding: 10px;
     width: 100vw;
@@ -258,6 +266,7 @@ section.polares{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     padding: 50px 30px;
 }
 
